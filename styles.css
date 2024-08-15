@@ -1,0 +1,47 @@
+/* Display area */
+.display-area{
+    min-height: 400px;
+    border: 3px solid tomato; 
+    /* Converts elements inside display-area named div with flexbox styling*/
+    display: flex;
+    /* Aligns buttons across vertical axis*/
+    justify-content: center;
+    /* Aligns buttons across vertical axis*/
+    align-items: center; 
+    /* Specify gap between each element, 1st number is for vertical, 2nd number is for horizontal */
+    gap: 20px 20px; 
+    /* Wraps the last element above and follows a reverse order of elements */
+    flex-wrap:wrap;
+    margin: 10px;
+}
+
+/* Buttons */
+.button{
+    /* Changes the background color of the button to green, default background color */
+    background-color:green;
+    /* Border for buttons, by default, is 2px solid turquoise */
+    border: 2px solid turquoise;
+    /* Color of the text inside the button is red by default */
+    color: yellow; 
+}
+
+/* When the mouse hovers over the buttons!  */
+.button:hover{
+    /* Changes the background color of the button to purple when hovered */
+    background-color: purple;
+    transition: linear; 
+    /* Changes the color of the text inside the button to white when hovered! */
+    color: white;
+    width: 15%;
+    height: 15%;
+}
+
+#press-me:hover{
+    /* When mouse hovers over this big button, will enlarge the button's size to 3 times its original size!*/
+    transform: scale(3);
+}
+
+/* 
+    Notes on more flexbox properties:
+    * 
+*/
