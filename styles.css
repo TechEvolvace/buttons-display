@@ -10,13 +10,13 @@
 
 nav{
     display: flex;
-    background-color: #004080; 
+    background-color: #0059bc; 
     color: white; 
     justify-content: center;
 }
 
 main{
-    background-color: #D3D4D8;
+    background-color: #E8ECEF;
 }
 
 footer{
@@ -32,9 +32,15 @@ header, footer{
     padding: 5%; 
 }
 
+.testing-exhibit-card{
+    background-color: #0066cc;
+    padding: 6%;
+    margin: 4%;
+    border-radius: 24px;
+}
+
 /* Display area */
 .display-area{
-    min-height: 20%;
     border: 3px solid tomato; 
     /* Converts elements inside display-area named div with flexbox styling*/
     display: flex;
@@ -74,8 +80,3 @@ header, footer{
     /* When mouse hovers over this big button, will enlarge the button's size to 3 times its original size!*/
     transform: scale(3);
 }
-
-/* 
-    Notes on more flexbox properties:
-    * 
-*/
