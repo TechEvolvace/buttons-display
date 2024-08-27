@@ -1,6 +1,40 @@
+.landing-page{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 8fr 0.5fr; 
+    grid-template-areas: 
+        "nav"
+        "main"
+        "footer";
+}
+
+nav{
+    display: flex;
+    background-color: #004080; 
+    color: white; 
+    justify-content: center;
+}
+
+main{
+    background-color: #D3D4D8;
+}
+
+footer{
+    display: flex; 
+    background-color: #002b56;
+    color: white;
+    justify-content: center; 
+    flex: 1 1 auto;
+}
+
+header, footer{
+    font-size: 2em; 
+    padding: 5%; 
+}
+
 /* Display area */
 .display-area{
-    min-height: 400px;
+    min-height: 20%;
     border: 3px solid tomato; 
     /* Converts elements inside display-area named div with flexbox styling*/
     display: flex;
