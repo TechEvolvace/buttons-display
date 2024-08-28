@@ -33,9 +33,8 @@ main{
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto; 
     grid-template-areas:
-        ".display-area .display-area"
-        ".display-area .display-area"
-
+        ".main-display-property-switch .main-display-property-switch"
+        ".display-area .display-area";
 }
 
 /* Only when screen width is less than or equal to 550px (the equivalent of a mobile phone screen size),
