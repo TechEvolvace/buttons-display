@@ -26,6 +26,24 @@ nav{
     justify-content: center;
 }
 
+.main-display-property-switch{
+    display: flex;
+    background-color: #7fcdff; 
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.display-switch-button{
+    display: flex;
+    background-color: green;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
 /* For screen width larger than 550px, displays each exhibit in a 2-column grid */
 main{
     display: grid;
@@ -33,20 +51,7 @@ main{
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto; 
     grid-template-areas:
-        ".main-display-property-switch .main-display-property-switch"
         ".display-area .display-area";
-}
-
-/* Only when screen width is less than or equal to 550px (the equivalent of a mobile phone screen size),
-    displays each exhibit vertically! */
-@media only screen and (max-width: 550px){
-    main{
-        background-color: #E8ECEF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: space-around;
-    }
 }
 
 /* Designs a footer with the credits centered on screen! */
@@ -63,6 +68,18 @@ header, footer{
     font-size: 2em; 
     padding: 5%; 
 }
+
+/* Only when screen width is less than or equal to 550px (the equivalent of a mobile phone screen size),
+    displays each exhibit vertically! */
+    @media only screen and (max-width: 550px){
+        main{
+            background-color: #E8ECEF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-around;
+        }
+    }
 
 /* Designs the exhibit card that contains each CSS-associated testing ground! */
 .testing-exhibit-card{
