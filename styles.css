@@ -29,9 +29,10 @@ nav{
 .main-display-property-switch{
     display: flex;
     background-color: #7fcdff; 
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0.25rem;
+    font-size: 1.25rem;
 }
 
 .display-switch-button{
@@ -40,8 +41,9 @@ nav{
     border: 1px solid transparent;
     border-radius: 25px;
     color: white;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
 }
 
 /* For screen width larger than 550px, displays each exhibit in a 2-column grid */
@@ -71,7 +73,15 @@ header, footer{
 
 /* Only when screen width is less than or equal to 550px (the equivalent of a mobile phone screen size),
     displays each exhibit vertically! */
-    @media only screen and (max-width: 550px){
+    @media only screen and (width <= 550px){
+        .main-display-property-switch{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-around;
+            font-size: 1.25rem;
+        }
+
         main{
             background-color: #E8ECEF;
             display: flex;
