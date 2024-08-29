@@ -46,6 +46,10 @@ nav{
     font-size: 1.25rem;
 }
 
+.display-switch-button:hover{
+    background-color: #00b300;
+}
+
 /* For screen width larger than 550px, displays each exhibit in a 2-column grid */
 main{
     display: grid;
@@ -112,8 +116,9 @@ header, footer{
     /* Specify gap between each element, 1st number is for vertical, 2nd number is for horizontal */
     gap: 20px 20px; 
     /* Wraps the last element above and follows a reverse order of elements */
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin: 10px;
+    flex: 1 1 auto;
 }
 
 /* Buttons */
@@ -138,6 +143,6 @@ header, footer{
 }
 
 #press-me:hover{
-    /* When mouse hovers over this big button, will enlarge the button's size to 3 times its original size!*/
-    transform: scale(3);
+    /* When mouse hovers over this big button, will enlarge the button's size to 2 times its original size!*/
+    transform: scaleX(2) scaleY(2);
 }
